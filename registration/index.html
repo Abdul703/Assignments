@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+</head>
+<body>
+	<main>
+		<header>
+			<h2>Register an Account</h2>
+		</header>
+
+		<section class="form-ctn">
+			<div>
+                <p>Enter your personal details to an create account</p>
+             </div>
+
+             <form action="login.html">
+             	<div class="form-element">
+	                <label for="firstname">First Name</label><br>
+	                <input type="text" name="firstname" required>
+                </div>
+
+                <div class="form-element">
+	                <label for="lastname">Last Name</label><br>
+	                <input type="text" name="lastname" required>
+                </div>
+
+                <div class="form-element">
+	                <label for="email">Email</label><br>
+	                <input type="email" name="email" required>
+                </div>
+
+                <div class="form-element">
+	                <label for="phone">Phone Number</label><br>
+	                <input type="number" name="phone" required>
+                </div>
+
+                <div class="form-element">
+	                <label for="dob">Date of Birth</label><br>
+	                <input type="date" name="dob" required>
+                </div>
+
+                <div class="form-element">
+                  <label>Gender</label>
+                  <div>
+                    <select aria-label="Default select example">
+                      <option selected>Select your gender</option>
+                      <option value="1">Male</option>
+                      <option value="2">Female</option>
+                      <option value="3">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-element">
+	                <label for="fav-color">Favorite Color:</label>
+	                <input type="color" name="fav-color" required>
+                </div>
+
+                <div class="form-element">
+	                <label for="password">Password</label><br>
+	                <input type="password" name="password" required>
+                </div>
+
+                <div class="form-element">
+	                <label for="confirm-password">Confirm Password</label><br>
+	                <input type="password" name="confirm-password" required>
+                </div>
+
+	            <div id="terms" class="form-element">
+	                <input name="accepts-terms" type="checkbox" value="" required>
+	                <label for="accept-terms">I agree and accept the <a href="#">terms and conditions</a></label>
+	            </div>
+
+                <div class="form-element">
+                	<a href="login.html">
+                  		<input type="submit" value="Register"> 
+                  	</a>
+                </div>
+                <div class="form-element">
+                  <p>Already have an account? <a href="login.html">Log in</a></p>
+                </div>
+             </form>
+		</section>
+	</main>
+</body>
+</html>
